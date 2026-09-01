@@ -1,0 +1,26 @@
+﻿@page "/power"
+@rendermode InteractiveServer
+@using System.Numerics;
+
+
+<h3>Power</h3>
+
+<label class="form-label"> Основание ( можно вводить отрицательные и дробные числа):</label>
+<input type="number"  @bind="baseValue" @bind:after="Calculate" />
+<label class="form-label">Показатель (можно вводить отрицательные и дробные числа):</label>
+<input type="number"  @bind="exponent" @bind:after="Calculate" />
+<h3>Результат: @result </h3>
+
+
+@* <button class="btn btn-primary" @onclick="Calculate"></button> *@
+@code 
+{
+    double baseValue;
+    double exponent;
+    string result = string.Empty;
+    void Calculate()
+    {
+        double calcResult = Math.Pow(baseValue, exponent);
+        result = calcResult.ToString("G15"); //Форматирование "G15" убирает лишние нули и предотвращает длинную запись
+    }
+}
