@@ -1,4 +1,14 @@
-﻿::deep .movie-title
+﻿.controls
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+ input[type=search]
+{
+	text-align:center;
+}
+::deep .movie-title
 {
 	width:50%;
 }
