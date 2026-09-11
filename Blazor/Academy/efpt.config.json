@@ -1,0 +1,174 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "PV_521_ImportContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "IrregularWords": null,
+   "MinimumProductVersion": "2.6.1706",
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PluralRules": null,
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Academy",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "SingularRules": null,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Attendance]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CompleteDisciplines]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DaysOFF]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DependentDisciplines]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Directions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Disciplines]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DisciplinesDirectionsRelation]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Exams]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Grades]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Groups]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Holidays]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RequiredDisciplines]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Salary]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Schedule]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Students]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Teachers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TeachersDisciplinesRelation]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[sp_InsertAllHolidaysFor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_InsertHolidaysFor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_InsertLesson]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_InsertScheduleAlternate]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_InsertScheduleStacionar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_InsertSheduleStacionar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SelectScheduleFor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[CountLessons]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetEasterDate]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetNewYearHolidaysStartDate]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetNextLeaningDay]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetNextLearningDate]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetNextLearningDay]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[GetSummertimeSadness]",
+         "ObjectType": 2
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false,
+   "UseTypedTvpParameters": true
+}
