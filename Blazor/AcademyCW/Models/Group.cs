@@ -13,6 +13,7 @@ namespace AcademyCW.Models
 
 		[Required]
 		[Column(TypeName = "TINYINT")]
+		[ForeignKey(nameof(Direction))]
 		public int direction { get; set; }
 
 		[Column("weekdays", TypeName = "TINYINT")]
@@ -21,6 +22,9 @@ namespace AcademyCW.Models
 		public TimeOnly? start_time { get; set; }
 
 		public DateOnly? start_date { get; set; }
+
+		// Navigation properties:
+		public Direction Direction { get; set; }
 	}
 
 }

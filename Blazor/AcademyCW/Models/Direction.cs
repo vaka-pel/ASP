@@ -14,5 +14,8 @@ namespace AcademyCW.Models
 		[StringLength(50, MinimumLength = 2)]
 		[Column(TypeName = "NVARCHAR(50)")]
 		public string direction_name { get; set; }
+
+		// Navigation properties:
+		public ICollection<Group> Groups { get; set; }
 	}
 }
