@@ -6,8 +6,8 @@ namespace AcademyCW.Models
 	{
 		[Required]
 		[StringLength(50, MinimumLength = 2)]
-		[RegularExpression("^[A-ZА-Я] [a-zа-я]+$")]
-		public string last_name {  get; set; }
+		[RegularExpression("^[A-ZА-Я][a-zа-я]+$")]
+		public string last_name { get; set; }
 
 		[Required]
 		[StringLength (50, MinimumLength = 2)]
@@ -19,7 +19,9 @@ namespace AcademyCW.Models
 		[DataType(DataType.Date)]
 		public DateOnly birth_date { get; set; }
 		[EmailAddress]
+		//[Required(AllowEmptyStrings = true)]
 		public string? email { get; set; }
+		//[Required(AllowEmptyStrings = true)]
 		public string? phone { get; set; }
 
 		[Column("photo", TypeName = "IMAGE")]
