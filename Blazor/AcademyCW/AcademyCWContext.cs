@@ -6,4 +6,5 @@ public class AcademyCWContext(DbContextOptions<AcademyCWContext> options) : DbCo
     public DbSet<AcademyCW.Models.Direction> Directions { get; set; } = default!;
     public DbSet<AcademyCW.Models.Group> Groups { get; set; } = default!;
     public DbSet<AcademyCW.Models.Student> Students { get; set; } = default!;
+    public DbSet<AcademyCW.Models.Teacher> Teachers { get; set; } = default!;
 }
