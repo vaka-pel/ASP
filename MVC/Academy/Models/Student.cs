@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace AcademyCW.Models
+namespace Academy.Models
 {
 	public class Student:Human
 	{
@@ -11,6 +11,7 @@ namespace AcademyCW.Models
 		public int group {  get; set; }
 
 		//		Navigation properties:
+		[NotMapped]
 		public Group Group { get; set; } 
 	}
 }

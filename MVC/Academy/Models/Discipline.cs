@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace AcademyCW.Models
+namespace Academy.Models
 {
 	public class Discipline
 	{

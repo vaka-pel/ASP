@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace AcademyCW.Models
+namespace Academy.Models
 {
 	public class Group
 	{
@@ -25,7 +25,7 @@ namespace AcademyCW.Models
 
 		// Navigation properties:
 		public Direction Direction { get; set; } = default!;
-		ICollection<Student> Students { get; set; } = default!;
+		public ICollection<Student> Students { get; set; } = default!;
 	}
 
 }
