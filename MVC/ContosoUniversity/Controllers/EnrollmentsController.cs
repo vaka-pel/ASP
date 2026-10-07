@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ContosoUniversity.Models;
+using ContosoUniversity;
 
 public class EnrollmentsController : Controller
 {
@@ -13,9 +14,22 @@ public class EnrollmentsController : Controller
     }
 
     // GET: ENROLLMENTS
-    public async Task<IActionResult> Index()    
+    public async Task<IActionResult> Index(int? pageNumber)    
     {
-        return View(await _context.Enrollments.ToListAsync());
+        var contossouniversityContext = _context.Enrollments
+                                                .Include(e => e.Course)
+                                                .Include(e => e.Student);
+        int pageSize = 3;
+        return View
+            (
+                await PaginatedList<Enrollment>.CreateAsync
+                (
+                    contossouniversityContext.AsNoTracking(),
+                    pageNumber ?? 1,
+                    pageSize
+                )
+            );
+            
     }
 
     // GET: ENROLLMENTS/Details/5
