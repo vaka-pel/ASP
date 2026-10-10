@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Academy.Models
 {
@@ -7,7 +8,7 @@ namespace Academy.Models
 		[Required]
 		[StringLength(50, MinimumLength = 2)]
 		[RegularExpression("^[A-ZА-Я][a-zа-я]+$")]
-		//[DisplayName("Фамилия")]
+		[DisplayName("Фамилия")]
 		public string last_name { get; set; }
 
 		[Required]
@@ -19,9 +20,10 @@ namespace Academy.Models
 		[Required]
 		[DataType(DataType.Date)]
 		public DateOnly birth_date { get; set; }
-		[EmailAddress]
+		//[EmailAddress]
 		//[Required(AllowEmptyStrings = true)]
 		public string? email { get; set; }
+		//[Phone]
 		//[Required(AllowEmptyStrings = true)]
 		public string? phone { get; set; }
 

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Academy.Models
 {
-	public class Teacher:Human
+	public class Teacher : Human
 	{
 		[Key]
 		[Column("teacher_id", TypeName = "SMALLINT")]

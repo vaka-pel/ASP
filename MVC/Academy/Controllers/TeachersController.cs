@@ -15,7 +15,7 @@ public class TeachersController : Controller
     // GET: TEACHERS
     public async Task<IActionResult> Index()    
     {
-        return View(await _context.Students.ToListAsync());
+        return View(await _context.Teachers.ToListAsync());
     }
 
     // GET: TEACHERS/Details/5
@@ -26,7 +26,7 @@ public class TeachersController : Controller
             return NotFound();
         }
 
-        var teacher = await _context.Students
+        var teacher = await _context.Teachers
             .FirstOrDefaultAsync(m => m.teacher_id == teacher_id);
         if (teacher == null)
         {
@@ -66,7 +66,7 @@ public class TeachersController : Controller
             return NotFound();
         }
 
-        var teacher = await _context.Students.FindAsync(teacher_id);
+        var teacher = await _context.Teachers.FindAsync(teacher_id);
         if (teacher == null)
         {
             return NotFound();
@@ -117,7 +117,7 @@ public class TeachersController : Controller
             return NotFound();
         }
 
-        var teacher = await _context.Students
+        var teacher = await _context.Teachers
             .FirstOrDefaultAsync(m => m.teacher_id == teacher_id);
         if (teacher == null)
         {
@@ -132,10 +132,10 @@ public class TeachersController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int? teacher_id)
     {
-        var teacher = await _context.Students.FindAsync(teacher_id);
+        var teacher = await _context.Teachers.FindAsync(teacher_id);
         if (teacher != null)
         {
-            _context.Students.Remove(teacher);
+            _context.Teachers.Remove(teacher);
         }
 
         await _context.SaveChangesAsync();
@@ -144,6 +144,6 @@ public class TeachersController : Controller
 
     private bool TeacherExists(int? teacher_id)
     {
-        return _context.Students.Any(e => e.teacher_id == teacher_id);
+        return _context.Teachers.Any(e => e.teacher_id == teacher_id);
     }
 }
